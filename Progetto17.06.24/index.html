@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="./index.js" type="module"></script>
+    <main class="container">
+        <div class="screen-background">
+            <h1>Priority</h1>
+            <div class="testa">
+                <h2>Hello User</h2>
+                <img src="./img/icona.png" alt="">
+            </div>
+            <p>Today you have new tasks</p>
+            <div class="container2">
+        <div class="phone1">
+            <button class="btn-1"> Alta priorità</button>
+            <ul class="alta-priorità"></ul>
+        </div>
+        <div class="phone2">
+            <button class="btn-2">Priorità importanti</button>
+            <ul class="importanti-priorità" id="blocco"></ul>
+        </div>
+        <div class="phone3">
+            <button class="btn-3">Bassa priorità</button>
+            <ul class="bassa-priorità"></ul>
+        </div>
+        </div>
+    </main>
+        <button class="add-task-btn">+</button>
+        <div class="modal" hidden>
+            <button class="close-modal">x</button>
+            <form class="modal-button" action="submit">
+            <input class="userId" type="number" placeholder="User ID">
+            <input class="id" type="number" placeholder="Number ID">
+            <input class="testo" type="text" placeholder="Task">
+            <input class="priority" type="number" placeholder="Priority"/>
+            <button class="send">Aggiungi</button></form>
+        </div>
+</body>
+</html>
